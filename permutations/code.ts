@@ -1,6 +1,12 @@
 let testArray: Array<number> = [1, 2, 3, 4, 5]
 
 // thoughts about this
+
+// prompt
+/*
+  given an array of numbers, return every permutations of the numbers that is possible
+*/
+
 /*
   could use a double loop of some kind
   could perhaps be better to look into a linked list solution
