@@ -20,7 +20,7 @@ function hashMapper(array: Array<number>) {
   array.forEach(ele => {
     // if the object has it increase count
     if (hash.hasOwnProperty(ele)) {
-      hash[ele]++
+      delete(hash[ele])
     } else {
       hash[ele] = 1
     }
@@ -54,9 +54,8 @@ console.log(nonDup(testArray))
     Time-complexity: 
 
       inital creation of hashmap: O(n) - linear
-      finding the correct key from the hash: O(n) - linear -> in worst case scenario
 
-  total time-complexity: O(n*2)
+  total time-complexity: O(n)
 
     Space-complexity:
 
