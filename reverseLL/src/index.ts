@@ -161,9 +161,6 @@ function reverseLL(head: LLNode): LLNode {
   return pointer
 }
 
-let test: LLNode = { value: 0, next: null }
-test.next = {value:1, next: null}
-
 console.log("Forwards: ", readTheLL(LLMaker()))
 console.log("Backwards: ", readTheLL(reverseLL(LLMaker())))
 

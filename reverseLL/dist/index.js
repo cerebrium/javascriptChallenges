@@ -109,8 +109,6 @@ function reverseLL(head) {
     // return the new head
     return pointer;
 }
-let test = { value: 0, next: null };
-test.next = { value: 1, next: null };
 console.log("Forwards: ", readTheLL(LLMaker()));
 console.log("Backwards: ", readTheLL(reverseLL(LLMaker())));
 /*
