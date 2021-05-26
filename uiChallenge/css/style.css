@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wordContainer {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(139, 139, 139);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "letterContainer letterContainer letterContainer letterContainer"
+    "letterContainer letterContainer letterContainer letterContainer"
+    "letterContainer letterContainer letterContainer letterContainer"
+    "letterContainer letterContainer letterContainer letterContainer"
+    ;
+}
+/* normal letters */
+.letterContainer {
+    cursor: pointer;
+    grid-area: "letterContainer";
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letterContainer:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+/* typed letters */
+.highlighted {
+    cursor: pointer;
+    grid-area: "letterContainer";
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.inputBox {
+    margin: 10px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h2 {
+    color:rgb(156, 156, 156);
+}
